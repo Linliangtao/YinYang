@@ -1,41 +1,58 @@
+body{
+	background-color: #444;
+}
+
+@keyframes slidein {
+	form {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 .yin-yang {
-	width: 96px;
-	height: 48px;
-	background: #eee;
-	border-color: black;
-	border-style: solid;
-	border-width: 2px 2px 50px 2px;
-	border-radius: 100%;
-	position: absolute;   
-	top: 40%;   
-	left: 45%;   
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;	
+	background: linear-gradient(to bottom,white
+	0%,white 50%,black 50%,black 100%);
+	position: relative;   
+	margin: 100px auto 20px; 
+	animation-duration: 2s;
+    animation-name:slidein;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 
 .yin-yang:before {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 50px;
 	left: 0;
 	background: #eee;
-	border: 18px solid black;
-	border-radius: 100%;
-	width: 12px;
-	height: 12px;
+	border: 40px solid black;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
 }
 
 .yin-yang:after {
 	content: "";
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 50px;
+	right: 0;
 	background: black;
-	border: 18px solid #eee;
-	border-radius:100%;
-	width: 12px;
-	height: 12px;
+	border: 40px solid white;
+	border-radius:50%;
+	width: 20px;
+	height: 20px;
 }
-
+p{
+	text-align: center;
+}
 
 
 	
 
+s
